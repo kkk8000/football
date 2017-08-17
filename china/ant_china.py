@@ -54,7 +54,7 @@ class ListName(SGMLParser):
 			
 stid = "&stid=10857"
 
-for round in range(1,22):
+for round in range(1,23):
 	conn = httplib.HTTPConnection("liansai.500.com")  
 	conn.request("GET", "/index.php?c=score&a=getmatch" + stid + "&round=" + str(round))  
 	r1 = conn.getresponse()
